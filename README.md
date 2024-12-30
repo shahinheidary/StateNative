@@ -1,50 +1,117 @@
-# Welcome to your Expo app 👋
+# Real Estate Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern real estate mobile application built with React Native, Expo, and Appwrite. This app allows users to browse properties, view detailed listings, and manage their real estate preferences.
 
-## Get started
+## 🌟 Features
 
-1. Install dependencies
+- **Authentication**: Google OAuth integration with Appwrite
+- **Property Listings**: Browse through various types of properties
+- **Search & Filters**: Search properties and filter by type
+- **Property Details**: View detailed information about properties including:
+  - Images and galleries
+  - Amenities and facilities
+  - Location information
+  - Reviews and ratings
+- **User Profiles**: Manage user profiles with customizable avatars
+- **Responsive Design**: Built with NativeWind (Tailwind CSS for React Native)
+- **Type Safety**: Written in TypeScript for better development experience
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Technologies
 
-2. Start the app
+- [Expo](https://expo.dev/)
+- [React Native](https://reactnative.dev/)
+- [Appwrite](https://appwrite.io/)
+- [NativeWind](https://www.nativewind.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Expo Router](https://docs.expo.dev/router/introduction/)
 
-   ```bash
-    npx expo start
-   ```
+## 📱 Screenshots
 
-In the output, you'll find options to open the app in a
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🚀 Getting Started
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Prerequisites
 
-## Get a fresh project
+- Node.js (v14 or higher)
+- npm or yarn
+- Expo CLI
+- Appwrite instance
 
-When you're ready, run:
+### Environment Variables
 
-```bash
-npm run reset-project
+Create a `.env` file in the root directory with the following variables:
+
+```
+EXPO_PUBLIC_APPWRITE_ENDPOINT=your_appwrite_endpoint
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_project_id
+EXPO_PUBLIC_DATABASE_ID=your_database_id
+EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=your_agents_collection_id
+EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID=your_galleries_collection_id
+EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=your_properties_collection_id
+EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID=your_reviews_collection_id
+EXPO_PUBLIC_APPWRITE_AVATARS_BUCKET_ID=your_avatars_bucket_id
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Installation
 
-## Learn more
+1. Clone the repository
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+git clone https://github.com/shahinheidary/StateNative.git
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+2. Install dependencies
 
-## Join the community
+```bash
+npm install
+```
 
-Join our community of developers creating universal apps.
+3. Start the app
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx expo start
+```
+
+### Running the App
+
+- For iOS: Press `i` in the terminal or run `npm run ios`
+- For Android: Press `a` in the terminal or run `npm run android`
+- For web: Press `w` in the terminal or run `npm run web`
+
+## 📁 Project Structure
+
+```
+├── app/ # Main application code
+│ ├── (root)/ # Protected routes
+│ ├── layout.tsx # Root layout component
+│ └── sign-in.tsx # Authentication screen
+├── components/ # Reusable components
+├── constants/ # App constants and assets
+├── lib/ # Utility functions and hooks
+└── assets/ # Static assets
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## 👏 Acknowledgments
+
+- [Expo](https://expo.dev/) for the amazing development platform
+- [Appwrite](https://appwrite.io/) for the backend services
+- [NativeWind](https://www.nativewind.dev/) for the styling solution
+
+## 📧 Contact
+
+Project Link: [https://github.com/shahinheidary/StateNative](https://github.com/shahinheidary/StateNative)
